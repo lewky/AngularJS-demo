@@ -1,0 +1,5 @@
+[
+	{"name":"张三", "math":99, "chinese":88},
+	{"name":"李四", "math":17, "chinese":46},
+	{"name":"赵五", "math":60, "chinese":60}
+]

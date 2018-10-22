@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>AngularJS入门小Demo-5 事件指令</title>
+	<script src="angular.min.js"></script>
+	<script>
+		//建立模块
+		//第一个参数是自定义的模块名，第二个参数是引用的模块名
+		var app = angular.module("myApp", []);
+		//创建控制器
+		app.controller("myController", function($scope){
+			
+			$scope.add = function() {
+				return $scope.z = parseInt($scope.x) + parseInt($scope.y);
+			}
+
+		});
+	</script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+第一个数：<input ng-model="x"><br>
+第二个数：<input ng-model="y">
+<button ng-click="add()">运算</button><br>
+结果：{{z}}
+
+</body>
+</html>
